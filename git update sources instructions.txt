@@ -1,0 +1,8 @@
+https://blackwall.plan.io/projects/rune-web/repository
+
+1. clone from piano: git clone git@blackwall.plan.io:blackwall-rune-web.git
+2. delete files
+3. copy new version to that folder
+4. git add .
+5. git commit -m "Rune Web Stable Version"
+6. git push origin master
