@@ -1,0 +1,100 @@
+﻿@using System.Web.Optimization
+@model FlatClubDemoApp.Models.Login.LoginModel
+@{
+    ViewBag.Title = "Login";
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+
+<html class="main-background-pic">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Stories | @ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+
+</head>
+<body>
+@*<div class="container">
+    <div class="row">
+        <div class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Login</h4>
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+    </div>
+</div>*@
+    <div class="container">
+        <!-- Modal -->
+        <div class="modal in" id="myModal" role="dialog">
+            <div class="modal-dialog modal-sm ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Sign Up or Sign In</h4>
+                    </div>
+                    <div class="modal-body">
+                        @using (Html.BeginForm("Login", "Home"))
+            {
+
+                            <div class="row">
+                                <div class="col-md-8">
+                                    @Html.TextBoxFor(m => m.Email, null, new { @class = "form-control", @placeholder = "use your email" })
+                                </div>
+                                <div class="col-md-4">
+                                    @Html.ValidationMessageFor(m => m.Email, null, new { @class = "error-message" })
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    @Html.TextBoxFor(m => m.Password, null, new { @class = "form-control", @type = "password", @placeholder = "password" })
+                                </div>
+                                <div class="col-md-4">
+                                    @Html.ValidationMessageFor(m => m.Password, null, new { @class = "error-message" })
+                                </div>
+                            </div>
+                            <br />
+                            if (ViewBag.LoginFailed != null && ViewBag.LoginFailed)
+                            {
+                                <div class="alert alert-danger">
+                                    <a class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                                    Not registered yet? You can <a href="/Home/Register">Register</a> now!
+                                </div>
+                            }
+
+
+                            <div class="modal-footer">
+                                <input type="submit" class="btn btn-primary" value="Sign in" />
+                                <span>or</span>
+                                <a href="/Home/Register" class="btn btn-default">Sign up</a>
+                                <div class="clear"></div>
+                                <hr />
+                            </div>
+                            
+
+                        }
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+
+</html>

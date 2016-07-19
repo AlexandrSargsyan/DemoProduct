@@ -1,0 +1,33 @@
+﻿<div ng-controller="groupsController as groups"> 
+    <h2>Groups</h2>
+    <button type="button" class="btn btn-primary" ng-click="groups.goto('/group/create')">Create New Group</button>
+    <div class="clear"></div>
+    <hr/>
+
+    <div class="panel-group">
+        <div class="panel panel-primary" ng-repeat="group in groups.groups">
+            <div class="panel-heading">
+                <h4>{{group.groupName}}</h4>
+            
+                    <button type="button" class="btn btn-default">Users <span class="badge">{{group.usersCount}}</span></button>
+                    <button type="button" class="btn btn-success">Stories <span class="badge">{{group.storiesCount}}</span></button>
+                
+            </div>
+            <div class="panel-body">
+                <h2>{{group.groupDescription}}</h2>
+          
+                <button type="button" class="btn btn-info" ng-click="groups.join(group)" ng-hide="group.userJoined">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 
+                    Join group
+                </button>
+                <button type="button" class="btn btn-default" disabled="disabled"  ng-show="group.userJoined">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                    You are already in this group
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <uib-pagination ng-if="groups.totalItems>0" total-items="groups.totalItems" items-per-page="5"
+                    ng-model="groups.currentPage" ng-change="groups.pageChanged()"></uib-pagination>
+</div>
