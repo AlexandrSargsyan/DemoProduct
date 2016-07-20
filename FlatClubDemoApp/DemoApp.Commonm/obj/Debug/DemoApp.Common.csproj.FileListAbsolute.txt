@@ -1,0 +1,14 @@
+C:\Users\Alexandr\documents\visual studio 2015\Projects\FlatClubDemoApp\DemoApp.Commonm\bin\Debug\DemoApp.Commonm.dll
+C:\Users\Alexandr\documents\visual studio 2015\Projects\FlatClubDemoApp\DemoApp.Commonm\bin\Debug\DemoApp.Commonm.pdb
+C:\Users\Alexandr\documents\visual studio 2015\Projects\FlatClubDemoApp\DemoApp.Commonm\obj\Debug\DemoApp.Commonm.dll
+C:\Users\Alexandr\documents\visual studio 2015\Projects\FlatClubDemoApp\DemoApp.Commonm\obj\Debug\DemoApp.Commonm.pdb
+C:\Users\Alexandr\documents\visual studio 2015\Projects\FlatClubDemoApp\DemoApp.Commonm\obj\Debug\DemoApp.Common.csprojResolveAssemblyReference.cache
+C:\Users\alexandr.sargsyan\Documents\Visual Studio 2015\Projects\FlatClubDemoApp\DemoApp.Commonm\bin\Debug\DemoApp.Commonm.dll
+C:\Users\alexandr.sargsyan\Documents\Visual Studio 2015\Projects\FlatClubDemoApp\DemoApp.Commonm\bin\Debug\DemoApp.Commonm.pdb
+C:\Users\alexandr.sargsyan\Documents\Visual Studio 2015\Projects\FlatClubDemoApp\DemoApp.Commonm\obj\Debug\DemoApp.Common.csprojResolveAssemblyReference.cache
+C:\Users\alexandr.sargsyan\Documents\Visual Studio 2015\Projects\FlatClubDemoApp\DemoApp.Commonm\obj\Debug\DemoApp.Commonm.dll
+C:\Users\alexandr.sargsyan\Documents\Visual Studio 2015\Projects\FlatClubDemoApp\DemoApp.Commonm\obj\Debug\DemoApp.Commonm.pdb
+C:\Users\alexandr.sargsyan\Documents\Visual Studio 2013\Projects\FlatClubDemoApp\DemoApp.Commonm\bin\Debug\DemoApp.Commonm.dll
+C:\Users\alexandr.sargsyan\Documents\Visual Studio 2013\Projects\FlatClubDemoApp\DemoApp.Commonm\bin\Debug\DemoApp.Commonm.pdb
+C:\Users\alexandr.sargsyan\Documents\Visual Studio 2013\Projects\FlatClubDemoApp\DemoApp.Commonm\obj\Debug\DemoApp.Commonm.dll
+C:\Users\alexandr.sargsyan\Documents\Visual Studio 2013\Projects\FlatClubDemoApp\DemoApp.Commonm\obj\Debug\DemoApp.Commonm.pdb

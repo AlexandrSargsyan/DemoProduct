@@ -1,0 +1,29 @@
+﻿<div ng-controller="storiesController as stories">
+
+    <div ng-show="stories.totalItems>0">
+        <h2>My Stories</h2>
+    </div>
+    <div ng-show="stories.totalItems==0">
+        <h2>No stories found.</h2></div>
+
+    <div class="card card-inverse card-info text-xs-center">
+        <div class="card-block" ng-repeat="story in stories.stories">
+            <blockquote class="card-blockquote">
+                <p>{{story.title}}</p>
+                <footer>{{story.postedOn | date :'MM/dd/yyyy'}}</footer>
+                <button type="button" class="btn btn-default" ng-click="stories.goto('/story/edit/'+story.storyId)">
+                    <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Edit
+                </button>
+                <button type="button" class="btn btn-default" ng-click="stories.goto('/story/view/'+story.storyId)">
+                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> View
+                </button>
+            </blockquote>
+        </div>
+
+    </div>
+    <button type="button" class="btn btn-success" ng-click="stories.goto('/story/create')">
+        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Create New Story
+    </button>
+    <uib-pagination ng-if="stories.totalItems>0" total-items="stories.totalItems"   items-per-page="5"
+                    ng-model="stories.currentPage" ng-change="stories.pageChanged()"></uib-pagination>
+</div>

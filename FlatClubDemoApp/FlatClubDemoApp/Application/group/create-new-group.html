@@ -1,0 +1,23 @@
+﻿<div ng-controller="newGroupController as group">
+
+    <h2>Create New Group</h2>
+
+    <form name="group.groupForm" novalidate ng-submit="group.create()">
+
+        <div class="form-group" ng-class="{'has-error':group.groupForm.groupName.$error.required && group.groupForm.$submitted  }">
+            <label for="name">Group Name</label>
+            <input type="text" class="form-control " name="groupName" id="name"
+                   ng-model="group.newGroup.groupName" ng-required="true">
+
+        </div>
+        <div class="form-group" ng-class="{'has-error':group.groupForm.desc.$error.required && group.groupForm.$submitted  }">
+            <label for="desc">Group Description</label>
+            <input type="text" class="form-control " name="desc" id="desc"
+                   ng-model="group.newGroup.groupDescription" ng-required="true">
+
+        </div>
+        <button class="btn btn-primary">Create</button>
+        <button type="button" class="btn btn-warning" ng-click="group.goto('/groups')">Cancel</button>
+        </form>
+
+</div>
